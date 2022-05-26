@@ -1,3 +1,26 @@
-nfgfdfbjhmnbnvbjnbjmhjk
-jhjkhkghjnfhjghj
-hjmjkghjgfjfhj
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'This is Build Stage'
+            }
+        }
+        stage('Deplayment') {
+            steps {
+                echo 'This is Deplayment Stage'
+            }
+        }
+                stage('Test') {
+            steps {
+                echo 'This is Test Stage'
+            }
+        }
+        stage('Relase') {
+            steps {
+                echo 'This is Relase Stage'
+            }
+        }
+    }
+}
